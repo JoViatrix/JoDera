@@ -1,0 +1,5 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/repo/fedora-%OS_VERSION%/lizardbyte-beta-fedora-%OS_VERSION%.repo
+install:
+  - sunshine

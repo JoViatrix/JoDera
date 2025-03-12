@@ -1,0 +1,25 @@
+modules:
+  - type: script
+    snippets:
+      - "curl -L -o /usr/bitwarden.rpm 'https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm'"
+  
+  - type: files
+    files:
+      - source: bitwarden
+        destination: /
+
+  - type: rpm-ostree
+    repos:
+      - https://repo.librewolf.net/librewolf.repo
+      - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
+      - bitwarden.rpm
+    optfix:
+      - wine-staging
+      - Bitwarden
+    install:
+      - librewolf
+      - thunderbird
+      - wine
+    remove:
+      - firefox
+      - firefox-langpacks
