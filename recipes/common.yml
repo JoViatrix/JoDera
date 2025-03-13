@@ -14,7 +14,7 @@ modules:
       - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
       - /usr/bitwarden.rpm
     optfix:
-      - wine-staging
+      - winehq-staging
       - Bitwarden
     install:
       - librewolf
