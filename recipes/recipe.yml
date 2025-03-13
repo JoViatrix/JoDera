@@ -18,6 +18,7 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - from-file: common.yml
+  - from-file: qemu.yml
   - from-file: sunshine.yml
   - from-file: rocm.yml
 

@@ -14,12 +14,27 @@ modules:
       - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
       - /usr/bitwarden.rpm
     optfix:
-      - winehq-staging
+      - wine-staging
       - Bitwarden
     install:
+      - btrbk
+      - corectrl
+      - ddrescue
+      - dosbox
+      - gamescope
+      - innoextract
       - librewolf
+      - mangohud
+      - mesa-libd3d
+      - mesa-libd3d.i686
+      - nextcloud-client-dolphin
+      - obs-studio
+      - piper
+      - screen
+      - steam
       - thunderbird
-      - wine
+      - waydroid
+      - winehq-staging
     remove:
       - firefox
       - firefox-langpacks
