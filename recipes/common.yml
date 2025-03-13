@@ -12,7 +12,7 @@ modules:
     repos:
       - https://repo.librewolf.net/librewolf.repo
       - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
-      - bitwarden.rpm
+      - /usr/bitwarden.rpm
     optfix:
       - wine-staging
       - Bitwarden
@@ -23,3 +23,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
+
+  - type: script
+    snippets:
+      - "rm /usr/bitwarden.rpm"
