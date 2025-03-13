@@ -3,7 +3,7 @@ modules:
     snippets:
       - "dnf5 remove -y kate firefox firefox-langpacks"
       - "dnf5 -y install steam mesa-libd3d mesa-libd3d.i686"
-  - scripts:
+    scripts:
       - common.sh
 
   - type: rpm-ostree
