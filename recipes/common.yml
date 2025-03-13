@@ -1,21 +1,10 @@
 modules:
-  - type: script
-    snippets:
-      - "curl -L -o /usr/bitwarden.rpm 'https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm'"
-  
-  - type: files
-    files:
-      - source: bitwarden
-        destination: /
-
   - type: rpm-ostree
     repos:
       - https://repo.librewolf.net/librewolf.repo
       - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
-      - /usr/bitwarden.rpm
     optfix:
       - wine-staging
-      - Bitwarden
     install:
       - btrbk
       - corectrl
@@ -25,8 +14,6 @@ modules:
       - innoextract
       - librewolf
       - mangohud
-      - mesa-libd3d
-      - mesa-libd3d.i686
       - nextcloud-client-dolphin
       - obs-studio
       - piper
@@ -41,4 +28,4 @@ modules:
 
   - type: script
     snippets:
-      - "rm /usr/bitwarden.rpm"
+      - "dnf5 -y install mesa-libd3d mesa-libd3d.i686"

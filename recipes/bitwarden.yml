@@ -1,0 +1,19 @@
+modules:
+  - type: script
+    snippets:
+      - "curl -L -o /usr/bitwarden.rpm 'https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm'"
+
+  - type: rpm-ostree
+    optfix:
+      - Bitwarden
+    install:
+      - /usr/bitwarden.rpm
+
+  - type: files
+    files:
+      - source: bitwarden
+        destination: /
+
+  - type: script
+    snippets:
+      - "rm /usr/bitwarden.rpm"

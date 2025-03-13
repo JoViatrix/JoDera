@@ -21,27 +21,14 @@ modules:
   - from-file: qemu.yml
   - from-file: sunshine.yml
   - from-file: rocm.yml
-
-  - type: rpm-ostree
-    repos:
-      - https://repo.librewolf.net/librewolf.repo
-      #- https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-    install:
-      - librewolf
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-      - kate
+  - from-file: bitwarden.yml
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
+        - org.openscad.OpenSCAD
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
