@@ -9,8 +9,6 @@ description: Custom fedora kinoite image.
 base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
@@ -24,14 +22,18 @@ modules:
   - from-file: bitwarden.yml
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
+    notify: true
     system:
-      # If no repo information is specified, Flathub will be used by default
       install:
+        - org.onlyoffice.desktopeditors
+        - org.freecad.FreeCAD
+        - com.github.tchx84.Flatseal
+        - com.github.zadam.trilium
+        - org.kde.kclock
+        - com.vscodium.codium
+        - io.github.jordanl2.ModularCalculator
         - org.openscad.OpenSCAD
-      remove:
-        - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
+    user: {}
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 

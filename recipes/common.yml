@@ -1,17 +1,30 @@
 modules:
+  - type: script
+    snippets:
+      - "dnf5 remove -y kate firefox firefox-langpacks"
+      - "dnf5 -y install steam mesa-libd3d mesa-libd3d.i686"
+  - scripts:
+      - common.sh
+
   - type: rpm-ostree
     repos:
       - https://repo.librewolf.net/librewolf.repo
       - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
+      - https://copr.fedorainfracloud.org/coprs/atim/heroic-games-launcher/repo/fedora-41/atim-heroic-games-launcher-fedora-41.repo
     optfix:
       - wine-staging
     install:
       - btrbk
+      - cabextract
+      - cdrskin
       - corectrl
       - ddrescue
       - dosbox
+      - flac
       - gamescope
+      - heroic-games-launcher-bin
       - innoextract
+      - k3b
       - librewolf
       - mangohud
       - nextcloud-client-dolphin
@@ -21,10 +34,15 @@ modules:
       - thunderbird
       - waydroid
       - winehq-staging
-    remove:
-      - firefox
-      - firefox-langpacks
 
   - type: script
-    snippets:
-      - "dnf5 -y install steam mesa-libd3d mesa-libd3d.i686"
+    scripts:
+      - cdemu.sh
+
+  - type: script
+    scripts:
+      - xone.sh
+  
+  - type: script
+    scripts:
+      - xpadneo.sh
