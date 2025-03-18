@@ -21,19 +21,5 @@ modules:
   - from-file: rocm.yml
   - from-file: bitwarden.yml
 
-  - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - org.onlyoffice.desktopeditors
-        - org.freecad.FreeCAD
-        - com.github.tchx84.Flatseal
-        - com.github.zadam.trilium
-        - org.kde.kclock
-        - com.vscodium.codium
-        - io.github.jordanl2.ModularCalculator
-        - org.openscad.OpenSCAD
-    user: {}
-
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 

@@ -2,7 +2,7 @@ modules:
   - type: script
     snippets:
       - "dnf5 remove -y kate firefox firefox-langpacks"
-      - "dnf5 -y install steam mesa-libd3d mesa-libd3d.i686"
+      - "dnf5 -y install steam mesa-libd3d mesa-libd3d.i686 mesa-libOSMesa.i686"
     scripts:
       - common.sh
 
@@ -48,3 +48,22 @@ modules:
   - type: script
     scripts:
       - xpadneo.sh
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      install:
+        - org.gimp.GIMP
+        - org.kde.skanpage
+        - org.kde.okular
+        - org.onlyoffice.desktopeditors
+        - org.freecad.FreeCAD
+        - com.github.tchx84.Flatseal
+        - com.github.zadam.trilium
+        - org.kde.kclock
+        - com.vscodium.codium
+        - io.github.jordanl2.ModularCalculator
+        - org.openscad.OpenSCAD
+        - com.transmissionbt.Transmission
+        - org.filezillaproject.Filezilla
+    user: {}
