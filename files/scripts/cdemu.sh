@@ -15,7 +15,7 @@ skopeo copy docker://ghcr.io/joviatrix/akmods-extra:"${KERNEL_FLAVOR}"-"${RELEAS
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
-dnf5 install -y cdemu-client cdemu-daemon gcdemu /tmp/rpms/kmods/*vhba*.rpm
+rpm-ostree install cdemu-client cdemu-daemon gcdemu /tmp/rpms/kmods/*vhba*.rpm
 
 cat >/etc/modules-load.d/vhba.conf <<EOF
 vhba

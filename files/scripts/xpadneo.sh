@@ -15,7 +15,7 @@ skopeo copy docker://ghcr.io/joviatrix/akmods:"${KERNEL_FLAVOR}"-"${RELEASE}"-"$
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
-dnf5 install -y xpadneo /tmp/rpms/kmods/*xpadneo*.rpm
+rpm-ostree install xpadneo /tmp/rpms/kmods/*xpadneo*.rpm
 
 cat >/etc/modules-load.d/xpadneo.conf <<EOF
 hid_xpadneo

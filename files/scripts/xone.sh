@@ -13,4 +13,4 @@ skopeo copy docker://ghcr.io/joviatrix/akmods:"${KERNEL_FLAVOR}"-"${RELEASE}"-"$
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
-dnf5 install -y xone-kmod xone-kmod-common /tmp/rpms/kmods/*xone*.rpm
+rpm-ostree install xone-kmod xone-kmod-common /tmp/rpms/kmods/*xone*.rpm
