@@ -7,13 +7,13 @@ description: Custom fedora kinoite image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: latest # latest is also supported if you want new updates ASAP
+image-version: latest
 
 modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        destination: /
 
   - from-file: common.yml
   - from-file: qemu.yml
@@ -33,5 +33,5 @@ modules:
       - python3-envycontrol
       - VK_hdr_layer
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: signing
 
