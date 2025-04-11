@@ -2,20 +2,18 @@ modules:
   - type: script
     snippets:
       - "dnf5 remove -y kate firefox firefox-langpacks"
-      - "dnf5 -y install steam mesa-libd3d mesa-libd3d.i686 mesa-libOSMesa.i686"
+      - "dnf5 -y install steam mesa-libd3d.i686 mesa-libOSMesa.i686"
     scripts:
       - common.sh
+
+  - from-file: wine-staging.yml
 
   - type: rpm-ostree
     repos:
       - https://repo.librewolf.net/librewolf.repo
-      - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
       - https://copr.fedorainfracloud.org/coprs/atim/heroic-games-launcher/repo/fedora-%OS_VERSION%/atim-heroic-games-launcher-fedora-%OS_VERSION%.repo
-    optfix:
-      - wine-staging
     install:
       - btrbk
-      - cabextract
       - cdrskin
       - corectrl
       - ddrescue
@@ -35,7 +33,6 @@ modules:
       - screen
       - thunderbird
       - waydroid
-      - winehq-staging
 
   - type: script
     scripts:

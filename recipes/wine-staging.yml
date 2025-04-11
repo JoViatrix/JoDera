@@ -1,0 +1,9 @@
+type: rpm-ostree
+repos:
+  - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
+optfix:
+  - wine-staging
+install:
+  - cabextract
+  - mesa-libd3d
+  - winehq-staging
