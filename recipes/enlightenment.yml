@@ -1,7 +1,10 @@
 modules:
   - type: rpm-ostree
     install:
+      - acpid
+      - bluez
+      - conman
       - enlightenment
       - efl
-      - terminology
       - sddm
+      - terminology

@@ -16,6 +16,7 @@ modules:
         destination: /
   - type: script
     snippets:
+      - "dnf5 remove -y firefox firefox-langpacks"
       - "dnf5 -y install mesa-dri-drivers mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers xorg-x11-drivers"
       - "systemctl set-default graphical.target"
 
