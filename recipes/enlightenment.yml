@@ -4,3 +4,4 @@ modules:
       - enlightenment
       - efl
       - terminology
+      - sddm
