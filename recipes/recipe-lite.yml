@@ -23,6 +23,11 @@ modules:
   - type: rpm-ostree
     install:
       - falkon
+      - mesa-dri-drivers
+      - mesa-va-drivers
+      - mesa-vdpau-drivers
+      - mesa-vulkan-drivers
+      - xorg-x11-drivers
 
   - type: signing
 

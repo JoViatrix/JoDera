@@ -8,6 +8,7 @@ modules:
       - Bitwarden
     install:
       - /usr/bitwarden.rpm
+      - https://github.com/quexten/goldwarden/releases/download/v0.3.6/goldwarden-0.3.6-1.el7.x86_64.rpm
 
   - type: files
     files:
