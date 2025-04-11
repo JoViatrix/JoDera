@@ -14,6 +14,10 @@ modules:
     files:
       - source: system
         destination: /
+  - type: script
+    snippets:
+      - "dnf5 -y install mesa-dri-drivers mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers xorg-x11-drivers"
+      - "systemctl set-default graphical.target"
 
   - from-file: enlightenment.yml
   - from-file: wine-staging.yml
@@ -23,11 +27,6 @@ modules:
   - type: rpm-ostree
     install:
       - falkon
-      - mesa-dri-drivers
-      - mesa-va-drivers
-      - mesa-vdpau-drivers
-      - mesa-vulkan-drivers
-      - xorg-x11-drivers
 
   - type: signing
 
