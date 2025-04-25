@@ -26,6 +26,7 @@ modules:
       - k3b
       - librewolf
       - libxcrypt-compat
+      - linuxconsoletools
       - mangohud
       - ncurses-compat-libs
       - nextcloud-client-dolphin

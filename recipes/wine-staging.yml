@@ -1,10 +1,17 @@
-type: rpm-ostree
-repos:
-  - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
-optfix:
-  - wine-staging
-install:
-  - cabextract
-  - mesa-libd3d
-  - mesa-libd3d.i686
-  - winehq-staging
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
+    optfix:
+      - wine-staging
+    install:
+      - cabextract
+      - mesa-libd3d
+      - mesa-libd3d.i686
+      - winehq-staging
+
+  - type: script
+    snippets:
+      - "cat >/etc/modules-load.d/ntsync.conf <<EOF
+         ntsync
+         EOF"
