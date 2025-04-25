@@ -11,7 +11,5 @@ modules:
       - winehq-staging
 
   - type: script
-    snippets:
-      - "cat >/etc/modules-load.d/ntsync.conf <<EOF
-         ntsync
-         EOF"
+    scripts:
+      - ntsync.sh
