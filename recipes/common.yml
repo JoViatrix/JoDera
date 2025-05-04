@@ -15,6 +15,7 @@ modules:
       - https://raw.githubusercontent.com/JoViatrix/JoDera/refs/heads/main/repos/zerotier.repo
     install:
       - btrbk
+      - cdrecord
       - cdrskin
       - corectrl
       - ddrescue
@@ -28,6 +29,7 @@ modules:
       - libxcrypt-compat
       - linuxconsoletools
       - mangohud
+      - mkisofs
       - ncurses-compat-libs
       - nextcloud-client-dolphin
       - obs-studio
