@@ -1,7 +1,7 @@
 modules:
   - type: rpm-ostree
     repos:
-      - https://dl.winehq.org/wine-builds/fedora/41/winehq.repo
+      - https://dl.winehq.org/wine-builds/fedora/42/winehq.repo
     optfix:
       - wine-staging
     install:
