@@ -21,6 +21,7 @@ modules:
       - "systemctl set-default graphical.target"
 
   - from-file: enlightenment.yml
+  - from-file: k3b.yml
   - from-file: wine-staging.yml
   - from-file: rocm.yml
   - from-file: bitwarden.yml
