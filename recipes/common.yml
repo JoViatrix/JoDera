@@ -20,11 +20,13 @@ modules:
       - ddrescue
       - dosbox
       - gamescope
+      - gcc-c++
       - heroic-games-launcher-bin
       - innoextract
       - librewolf
       - libxcrypt-compat
       - linuxconsoletools
+      - make
       - mangohud
       - ncurses-compat-libs
       - nextcloud-client-dolphin
