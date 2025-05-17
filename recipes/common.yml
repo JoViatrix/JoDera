@@ -16,21 +16,16 @@ modules:
       - https://negativo17.org/repos/fedora-multimedia.repo
     install:
       - btrbk
-      - cdrecord
-      - cdrskin
       - corectrl
       - ddrescue
       - dosbox
-      - flac
       - gamescope
       - heroic-games-launcher-bin
       - innoextract
-      - k3b
       - librewolf
       - libxcrypt-compat
       - linuxconsoletools
       - mangohud
-      - mkisofs
       - ncurses-compat-libs
       - nextcloud-client-dolphin
       - obs-studio
@@ -39,6 +34,8 @@ modules:
       - thunderbird
       - waydroid
       - zerotier-one
+
+  - from-file: k3b.yml
 
   - type: script
     scripts:
