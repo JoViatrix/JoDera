@@ -1,20 +1,10 @@
 modules:
   - type: script
-    snippets:
-      - "curl -L -o /usr/bitwarden.rpm 'https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm'"
-
-  - type: rpm-ostree
-    optfix:
-      - Bitwarden
-    install:
-      - /usr/bitwarden.rpm
-      - https://github.com/quexten/goldwarden/releases/download/v0.3.6/goldwarden-0.3.6-1.el7.x86_64.rpm
+    scripts:
+      - bitwarden.sh
+      - goldwarden.sh
 
   - type: files
     files:
       - source: bitwarden
         destination: /
-
-  - type: script
-    snippets:
-      - "rm /usr/bitwarden.rpm"

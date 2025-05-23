@@ -11,7 +11,6 @@ modules:
   - type: rpm-ostree
     repos:
       - https://repo.librewolf.net/librewolf.repo
-      - https://copr.fedorainfracloud.org/coprs/atim/heroic-games-launcher/repo/fedora-%OS_VERSION%/atim-heroic-games-launcher-fedora-%OS_VERSION%.repo
       - https://raw.githubusercontent.com/JoViatrix/JoDera/refs/heads/main/repos/zerotier.repo
     install:
       - btrbk
@@ -20,7 +19,6 @@ modules:
       - dosbox
       - gamescope
       - gcc-c++
-      - heroic-games-launcher-bin
       - innoextract
       - librewolf
       - libxcrypt-compat
@@ -41,13 +39,8 @@ modules:
   - type: script
     scripts:
       - cdemu.sh
-
-  - type: script
-    scripts:
+      - heroic.sh
       - xone.sh
-  
-  - type: script
-    scripts:
       - xpadneo.sh
 
   - type: default-flatpaks
