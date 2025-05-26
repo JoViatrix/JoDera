@@ -11,14 +11,13 @@ modules:
   - type: rpm-ostree
     repos:
       - https://repo.librewolf.net/librewolf.repo
-      - https://raw.githubusercontent.com/JoViatrix/JoDera/refs/heads/main/repos/zerotier.repo
+      - zerotier.repo
     install:
       - btrbk
       - corectrl
       - ddrescue
       - dosbox
       - gamescope
-      - gcc-c++
       - innoextract
       - librewolf
       - libxcrypt-compat
