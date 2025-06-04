@@ -37,6 +37,7 @@ modules:
 
   - type: script
     scripts:
+      - aaru.sh
       - cdemu.sh
       - heroic.sh
       - xone.sh
