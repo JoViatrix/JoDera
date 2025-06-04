@@ -13,3 +13,5 @@ URL="https://github.com/$REPO/releases/download/$TAG/$ASSET_NAME"
 curl -L -o "/tmp/aaru.rpm" "$URL"
 
 rpm-ostree install /tmp/aaru.rpm
+
+mv --update=none-fail /usr/local/bin/aaru /usr/bin/
