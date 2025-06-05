@@ -30,5 +30,10 @@ modules:
     install:
       - falkon
 
+  - type: script
+    scripts:
+      - aaru.sh
+      - cdemu.sh
+
   - type: signing
 
