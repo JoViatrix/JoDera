@@ -2,7 +2,7 @@ modules:
   - type: script
     snippets:
       - "dnf5 remove -y kate firefox firefox-langpacks"
-      - "dnf5 -y install steam mesa-libOSMesa.i686"
+      - "dnf5 -y install steam"
     scripts:
       - common.sh
 
@@ -31,6 +31,7 @@ modules:
       - screen
       - thunderbird
       - waydroid
+      - whipper
       - zerotier-one
 
   - from-file: k3b.yml
@@ -56,8 +57,10 @@ modules:
         - com.github.zadam.trilium
         - org.kde.kclock
         - com.vscodium.codium
-        - io.github.jordanl2.ModularCalculator
+        - org.speedcrunch.SpeedCrunch
         - org.openscad.OpenSCAD
         - com.transmissionbt.Transmission
         - org.filezillaproject.Filezilla
+        - org.kde.haruna
+        - io.github.aandrew_me.ytdn
     user: {}
