@@ -42,7 +42,6 @@ modules:
       - cdemu.sh
       - heroic.sh
       - xone.sh
-      - xpadneo.sh
 
   - type: default-flatpaks
     notify: true

@@ -9,6 +9,7 @@ modules:
       - mesa-libd3d
       - mesa-libd3d.i686
       - winehq-staging
+      - https://github.com/JoViatrix/JoDera/raw/refs/heads/main/rpms/libosmesa-dummy-1.0-1.fc42.x86_64.rpm
 
   - type: script
     scripts:
