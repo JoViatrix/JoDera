@@ -30,6 +30,7 @@ jobs:
           - recipe.yml
           - recipe-lite.yml
           - recipe-nvidia.yml
+          - recipe-nvidia-generic.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
