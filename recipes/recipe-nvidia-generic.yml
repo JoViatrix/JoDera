@@ -23,15 +23,13 @@ modules:
 
   - type: script
     scripts:
-      - nvidia-open.sh
-      - acer-wmi-battery.sh
+      - nvidia.sh
 
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/sunwire/envycontrol/repo/fedora-%OS_VERSION%/sunwire-envycontrol-fedora-%OS_VERSION%.repo
     install:
       - python3-envycontrol
-      - VK_hdr_layer
 
   - type: signing
 
