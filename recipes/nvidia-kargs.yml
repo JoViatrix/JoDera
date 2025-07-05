@@ -1,0 +1,6 @@
+type: kargs
+arch: x86_64, aarch64
+kargs:
+  - rd.driver.blacklist=nouveau
+  - modprobe.blacklist=nouveau
+  - nvidia-drm.modeset=1
