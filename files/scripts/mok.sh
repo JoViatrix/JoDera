@@ -13,4 +13,4 @@ skopeo copy docker://ghcr.io/joviatrix/akmods:"${KERNEL_FLAVOR}"-"${RELEASE}"-"$
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
-rpm-ostree install /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm --uninstall=ublue-os-akmods-addon
+rpm-ostree override replace /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm
