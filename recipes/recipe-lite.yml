@@ -34,7 +34,6 @@ modules:
     scripts:
       - aaru.sh
       - cdemu.sh
-      - mok.sh
 
   - type: signing
 

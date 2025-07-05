@@ -43,7 +43,6 @@ modules:
       - heroic.sh
       - xone.sh
       - xpadneo.sh
-      - mok.sh
 
   - type: default-flatpaks
     notify: true
