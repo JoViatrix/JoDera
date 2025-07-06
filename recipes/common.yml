@@ -13,6 +13,7 @@ modules:
       - https://repo.librewolf.net/librewolf.repo
       - zerotier.repo
     install:
+      - bcache-tools
       - btrbk
       - corectrl
       - ddrescue
