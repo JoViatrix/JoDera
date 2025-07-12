@@ -14,10 +14,22 @@ modules:
     files:
       - source: system
         destination: /
+
+  - type: dnf
+    install:
+      packages:
+        - mesa-dri-drivers
+        - mesa-va-drivers
+        - mesa-vdpau-drivers
+        - mesa-vulkan-drivers
+        - xorg-x11-drivers
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
+
   - type: script
     snippets:
-      - "dnf5 remove -y firefox firefox-langpacks"
-      - "dnf5 -y install mesa-dri-drivers mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers xorg-x11-drivers"
       - "systemctl set-default graphical.target"
 
   - from-file: enlightenment.yml

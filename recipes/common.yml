@@ -1,10 +1,20 @@
 modules:
-  - type: script
-    snippets:
-      - "dnf5 remove -y kate firefox firefox-langpacks"
-      - "dnf5 -y install steam"
-    scripts:
-      - common.sh
+  # - type: script
+  #   snippets:
+  #     - "dnf5 remove -y kate firefox firefox-langpacks"
+  #     - "dnf5 -y install steam"
+  #   scripts:
+  #     - common.sh
+  
+  - type: dnf
+    install:
+      packages:
+        - steam
+    remove:
+      packages:
+        - kate
+        - firefox
+        - firefox-langpacks
 
   - from-file: wine-staging.yml
 
@@ -45,6 +55,8 @@ modules:
       - heroic.sh
       - xone.sh
       - xpadneo.sh
+
+  - from-file: monado.yml
 
   - type: default-flatpaks
     notify: true
