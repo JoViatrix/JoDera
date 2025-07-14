@@ -40,6 +40,7 @@ modules:
       - nextcloud-client-dolphin
       - obs-studio
       - piper
+      - podman-compose
       - screen
       - thunderbird
       - waydroid
