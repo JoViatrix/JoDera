@@ -1,11 +1,4 @@
 modules:
-  # - type: script
-  #   snippets:
-  #     - "dnf5 remove -y kate firefox firefox-langpacks"
-  #     - "dnf5 -y install steam"
-  #   scripts:
-  #     - common.sh
-  
   - type: dnf
     install:
       packages:
@@ -20,6 +13,7 @@ modules:
 
   - type: rpm-ostree
     repos:
+      - https://copr.fedorainfracloud.org/coprs/joviatrix/Dvdisaster/repo/fedora-%OS_VERSION%/joviatrix-Dvdisaster-fedora-%OS_VERSION%.repo
       - https://repo.librewolf.net/librewolf.repo
       - zerotier.repo
     install:
@@ -29,6 +23,7 @@ modules:
       - corectrl
       - ddrescue
       - dosbox
+      - dvdisaster-gtk3
       - gamescope
       - innoextract
       - librewolf
