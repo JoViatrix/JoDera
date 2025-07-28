@@ -55,22 +55,30 @@ modules:
   - from-file: monado.yml
 
   - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - org.gimp.GIMP
-        - org.kde.skanpage
-        - org.kde.okular
-        - org.onlyoffice.desktopeditors
-        - org.freecad.FreeCAD
-        - com.github.tchx84.Flatseal
-        - com.github.zadam.trilium
-        - org.kde.kclock
-        - com.vscodium.codium
-        - org.speedcrunch.SpeedCrunch
-        - org.openscad.OpenSCAD
-        - com.transmissionbt.Transmission
-        - org.filezillaproject.Filezilla
-        - org.kde.haruna
-        - io.github.aandrew_me.ytdn
-    user: {}
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - org.gimp.GIMP
+          - org.kde.skanpage
+          - org.kde.okular
+          - org.onlyoffice.desktopeditors
+          - org.freecad.FreeCAD
+          - com.github.tchx84.Flatseal
+          - org.kde.kclock
+          - com.vscodium.codium
+          - org.speedcrunch.SpeedCrunch
+          - org.openscad.OpenSCAD
+          - com.transmissionbt.Transmission
+          - org.filezillaproject.Filezilla
+          - org.kde.haruna
+          - io.github.aandrew_me.ytdn
+      
+      - notify: true
+        scope: system
+        repo:
+          url: https://flatpak.dolphin-emu.org/dev.flatpakrepo
+          name: dolphin-emu
+          title: Dolphin Emu
+        install:
+          - org.DolphinEmu.dolphin-emu
