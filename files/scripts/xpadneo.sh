@@ -4,8 +4,6 @@ set -ouex pipefail
 
 echo "Installing xpadneo"
 
-dnf5 -y copr enable atim/xpadneo
-
 RELEASE="$(rpm -E %fedora)"
 KERNEL_FLAVOR=main
 KERNEL_SUFFIX=""
@@ -15,13 +13,11 @@ skopeo copy docker://ghcr.io/joviatrix/akmods:"${KERNEL_FLAVOR}"-"${RELEASE}"-"$
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
-rpm-ostree install xpadneo /tmp/rpms/kmods/*xpadneo*.rpm
+rpm-ostree install xpadneo-kmod-common /tmp/rpms/kmods/*xpadneo*.rpm
 
 cat >/etc/modules-load.d/xpadneo.conf <<EOF
 hid_xpadneo
 EOF
-
-dnf5 copr remove atim/xpadneo
 
 
 
