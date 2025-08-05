@@ -9,9 +9,7 @@ install:
   - hipsolver
   - hipsparse
   - miopen
-  - mivisionx
   - rccl
-  - rocal
   - rocalution
   - rocblas
   - rocdecode
