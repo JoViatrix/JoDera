@@ -1,3 +1,33 @@
 type: rpm-ostree
 install:
-  - rocm
+  - amdsmi
+  - hipblas
+  - hipblaslt
+  - hipcc
+  - hipfft
+  - hiprand
+  - hipsolver
+  - hipsparse
+  - miopen
+  - mivisionx
+  - rccl
+  - rocal
+  - rocalution
+  - rocblas
+  - rocdecode
+  - rocfft
+  - rocjpeg
+  - rocm-clang
+  - rocm-clinfo
+  - rocm-core
+  - rocm-hip
+  - rocm-omp
+  - rocm-opencl
+  - rocm-rpp
+  - rocm-runtime
+  - rocm-smi
+  - rocminfo
+  - rocrand
+  - rocsolver
+  - rocsparse
+  - roctracer
