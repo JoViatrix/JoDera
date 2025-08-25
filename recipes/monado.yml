@@ -3,4 +3,4 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/joviatrix/monado-git/repo/fedora-%OS_VERSION%/joviatrix-monado-git-fedora-%OS_VERSION%.repo
     install:
-      - monado-constellation
+      - monado
