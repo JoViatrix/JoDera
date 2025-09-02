@@ -2,7 +2,6 @@ modules:
   - type: script
     scripts:
       - bitwarden.sh
-      - goldwarden.sh
 
   - type: files
     files:
