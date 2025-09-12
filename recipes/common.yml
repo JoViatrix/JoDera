@@ -33,6 +33,7 @@ modules:
       - mangohud
       - ncurses-compat-libs
       - nextcloud-client-dolphin
+      - ngspice
       - obs-studio
       - piper
       - podman-compose
