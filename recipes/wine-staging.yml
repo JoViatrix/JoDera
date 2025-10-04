@@ -8,7 +8,7 @@ modules:
       - cabextract
       - mesa-libd3d
       - mesa-libd3d.i686
-      - winehq-staging-10.14
+      - winehq-staging
 
   - type: script
     scripts:
