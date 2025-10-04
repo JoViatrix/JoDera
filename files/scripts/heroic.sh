@@ -13,9 +13,7 @@ URL="https://github.com/$REPO/releases/download/$TAG/$ASSET_NAME"
 curl -L -o "/tmp/heroic.rpm" "$URL"
 
 
-mkdir -p /var/opt
 rpm-ostree install /tmp/heroic.rpm
-mv /opt/Heroic /usr/lib/opt/Heroic
 
 cat >/usr/lib/tmpfiles.d/heroic.conf <<EOF
 L /opt/Heroic - - - - /usr/lib/opt/Heroic
