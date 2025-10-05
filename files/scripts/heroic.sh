@@ -14,7 +14,3 @@ curl -L -o "/tmp/heroic.rpm" "$URL"
 
 
 rpm-ostree install /tmp/heroic.rpm
-
-cat >/usr/lib/tmpfiles.d/heroic.conf <<EOF
-L /opt/Heroic - - - - /usr/lib/opt/Heroic
-EOF
