@@ -9,6 +9,8 @@ modules:
         - firefox
         - firefox-langpacks
 
+  - from-file: media-common.yml
+
   - from-file: wine-staging.yml
 
   - type: rpm-ostree
@@ -52,6 +54,8 @@ modules:
       - heroic.sh
       - xone.sh
       - xpadneo.sh
+
+  - from-file: fs-uae.yml
 
   - from-file: monado.yml
 

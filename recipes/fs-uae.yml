@@ -1,0 +1,18 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://download.opensuse.org/repositories/home:FrodeSolheim/Fedora_%OS_VERSION%/home:FrodeSolheim.repo
+     
+    install:
+      packages:
+        - repo: home_FrodeSolheim
+          packages:
+            - fs-uae
+            - fs-uae-launcher
+            - fs-uae-arcade
+        
+        - python3-qt5
+
+  
