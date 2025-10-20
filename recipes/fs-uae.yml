@@ -14,5 +14,7 @@ modules:
             - fs-uae-arcade
         
         - python3-qt5
+        - python3-pyqt6
+        - python3-pyopengl
 
   
