@@ -6,8 +6,6 @@ modules:
       - wine-staging
     install:
       - cabextract
-      - mesa-libd3d
-      - mesa-libd3d.i686
       - winehq-staging
 
   - type: script
