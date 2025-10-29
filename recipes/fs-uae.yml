@@ -3,7 +3,7 @@ modules:
     repos:
       cleanup: true
       files:
-        - https://download.opensuse.org/repositories/home:FrodeSolheim/Fedora_%OS_VERSION%/home:FrodeSolheim.repo
+        - https://download.opensuse.org/repositories/home:FrodeSolheim/Fedora_Rawhide/home:FrodeSolheim.repo
      
     install:
       packages:
