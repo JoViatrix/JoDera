@@ -16,5 +16,6 @@ modules:
         - python3-qt5
         - python3-pyqt6
         - python3-pyopengl
+        - python3-setuptools
 
   
