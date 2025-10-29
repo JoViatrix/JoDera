@@ -1,0 +1,5 @@
+type: rpm-ostree
+install:
+  - cava
+  - qt6-qtwebsockets-devel
+  - python-websockets
