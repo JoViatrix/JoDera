@@ -60,6 +60,8 @@ modules:
 
   - from-file: monado.yml
 
+  - from-file: kurve.yml
+
   - type: default-flatpaks
     configurations:
       - notify: true
