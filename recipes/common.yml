@@ -67,8 +67,6 @@ modules:
 
   - from-file: kurve.yml
 
-  - from-file: omnissa-horizon.yml
-
   - type: default-flatpaks
     configurations:
       - notify: true
