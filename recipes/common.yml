@@ -1,8 +1,10 @@
 modules:
   - type: dnf
     install:
+      allow-erasing: true
       packages:
         - steam
+        - mesa-vulkan-drivers.x86_64
     remove:
       packages:
         - kate
