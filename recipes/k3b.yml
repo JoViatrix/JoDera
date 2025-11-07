@@ -1,15 +1,15 @@
 type: dnf
-  repos:
-    cleanup: true
-    nonfree: negativo17
-  
-  install:
-    packages:
-      - cdrecord
-      - cdrskin
-      - flac
-      - k3b
-      - mkisofs
-      - normalize
-      - sox
-      - vcdimager
+repos:
+  cleanup: true
+  nonfree: negativo17
+
+install:
+  packages:
+    - cdrecord
+    - cdrskin
+    - flac
+    - k3b
+    - mkisofs
+    - normalize
+    - sox
+    - vcdimager
