@@ -13,6 +13,7 @@ skopeo copy docker://ghcr.io/joviatrix/akmods:"${KERNEL_FLAVOR}"-"${RELEASE}"-"$
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
+sudo dnf config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-multimedia.repo
 rpm-ostree install xpadneo-kmod-common /tmp/rpms/kmods/*xpadneo*.rpm
 
 cat >/etc/modules-load.d/xpadneo.conf <<EOF
