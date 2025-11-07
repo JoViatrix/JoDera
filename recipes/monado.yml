@@ -1,6 +1,8 @@
-modules:
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/joviatrix/monado-git/repo/fedora-%OS_VERSION%/joviatrix-monado-git-fedora-%OS_VERSION%.repo
-    install:
-      - monado
+type: dnf
+repos:
+  cleanup: true
+  copr:
+    - joviatrix/monado-git
+install:
+  packages:
+    - monado
