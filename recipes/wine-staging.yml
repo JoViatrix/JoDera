@@ -1,12 +1,13 @@
 modules:
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://dl.winehq.org/wine-builds/fedora/42/winehq.repo
-    optfix:
-      - wine-staging
+      cleanup: true
+      files:
+        - https://dl.winehq.org/wine-builds/fedora/43/winehq.repo
     install:
-      - cabextract
-      - winehq-staging
+      packages:
+        - cabextract
+        - winehq-staging
 
   - type: script
     snippets:
