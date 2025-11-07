@@ -18,7 +18,6 @@ modules:
   - from-file: common.yml
   - from-file: qemu.yml
   - from-file: sunshine.yml
-  - from-file: rocm.yml
   - from-file: bitwarden.yml
 
   - type: script
