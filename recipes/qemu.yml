@@ -1,8 +1,9 @@
-type: rpm-ostree
+type: dnf
 install:
-  - virt-manager
-  - virt-install
-  - libvirt-daemon-kvm
-  - libvirt-daemon-config-network
-  - qemu-system-aarch64
-  - qemu-system-riscv
+  packages:
+    - virt-manager
+    - virt-install
+    - libvirt-daemon-kvm
+    - libvirt-daemon-config-network
+    - qemu-system-aarch64
+    - qemu-system-riscv

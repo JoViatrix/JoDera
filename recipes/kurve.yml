@@ -1,5 +1,6 @@
-type: rpm-ostree
+type: dnf
 install:
-  - cava
-  - qt6-qtwebsockets-devel
-  - python3-websockets
+  packages:
+    - cava
+    - qt6-qtwebsockets-devel
+    - python3-websockets

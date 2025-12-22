@@ -1,13 +1,43 @@
 modules:
   - type: dnf
     repos:
+      files:
+        - https://repo.librewolf.net/librewolf.repo
+        - zerotier.repo
+      copr:
+        - joviatrix/Dvdisaster
       nonfree: rpmfusion
     install:
       allow-erasing: true
       packages:
+        - bcache-tools
+        - bees
+        - btrbk
+        - corectrl
+        - ddrescue
+        - dosbox
+        - dvdisaster-gtk3
+        - gamescope
+        - innoextract
+        - kontact
+        - librewolf
+        - libxcrypt-compat
+        - linuxconsoletools
+        - make
+        - mangohud
+        - ncurses-compat-libs
+        - nextcloud-client-dolphin
+        - ngspice
+        - obs-studio
+        - piper
+        - podman-compose
+        - screen
+        - snapd
         - steam
-
-  - type: dnf
+        - thunderbird
+        - waydroid
+        - whipper
+        - zerotier-one
     remove:
       packages:
         - kate
@@ -17,39 +47,6 @@ modules:
   - from-file: media-common.yml
 
   - from-file: wine-staging.yml
-
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/joviatrix/Dvdisaster/repo/fedora-%OS_VERSION%/joviatrix-Dvdisaster-fedora-%OS_VERSION%.repo
-      - https://repo.librewolf.net/librewolf.repo
-      - zerotier.repo
-    install:
-      - bcache-tools
-      - bees
-      - btrbk
-      - corectrl
-      - ddrescue
-      - dosbox
-      - dvdisaster-gtk3
-      - gamescope
-      - innoextract
-      - librewolf
-      - libxcrypt-compat
-      - linuxconsoletools
-      - make
-      - mangohud
-      - ncurses-compat-libs
-      - nextcloud-client-dolphin
-      - ngspice
-      - obs-studio
-      - piper
-      - podman-compose
-      - screen
-      - snapd
-      - thunderbird
-      - waydroid
-      - whipper
-      - zerotier-one
 
   - from-file: k3b.yml
 
@@ -66,6 +63,8 @@ modules:
   - from-file: monado.yml
 
   - from-file: kurve.yml
+
+  - from-file: omnissa-horizon.yml
 
   - type: default-flatpaks
     configurations:

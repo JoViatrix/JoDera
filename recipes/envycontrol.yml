@@ -2,7 +2,7 @@ type: dnf
 repos:
   cleanup: true
   copr:
-    - lizardbyte/beta
+    - sunwire/envycontrol
 install:
   packages:
-    - Sunshine
+    - python3-envycontrol

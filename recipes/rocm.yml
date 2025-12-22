@@ -1,31 +1,4 @@
-type: rpm-ostree
+type: dnf
 install:
-  - amdsmi
-  - hipblas
-  - hipblaslt
-  - hipcc
-  - hipfft
-  - hiprand
-  - hipsolver
-  - hipsparse
-  - miopen
-  - rccl
-  - rocalution
-  - rocblas
-  - rocdecode
-  - rocfft
-  - rocjpeg
-  - rocm-clang
-  - rocm-clinfo
-  - rocm-core
-  - rocm-hip
-  - rocm-omp
-  - rocm-opencl
-  - rocm-rpp
-  - rocm-runtime
-  - rocm-smi
-  - rocminfo
-  - rocrand
-  - rocsolver
-  - rocsparse
-  - roctracer
+  packages:
+    - rocm

@@ -1,10 +1,11 @@
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - acpid
-      - bluez
-      - conman
-      - enlightenment
-      - efl
-      - sddm
-      - terminology
+      packages:
+        - acpid
+        - bluez
+        - conman
+        - enlightenment
+        - efl
+        - sddm
+        - terminology

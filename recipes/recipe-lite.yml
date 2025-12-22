@@ -18,6 +18,7 @@ modules:
   - type: dnf
     install:
       packages:
+        - falkon
         - mesa-dri-drivers
         - mesa-va-drivers
         - mesa-vdpau-drivers
@@ -37,10 +38,6 @@ modules:
   - from-file: wine-staging.yml
   - from-file: rocm.yml
   - from-file: bitwarden.yml
-
-  - type: rpm-ostree
-    install:
-      - falkon
 
   - type: script
     scripts:

@@ -26,13 +26,7 @@ modules:
       - acer-wmi-battery.sh
 
   - from-file: nvidia-kargs.yml
-
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/sunwire/envycontrol/repo/fedora-%OS_VERSION%/sunwire-envycontrol-fedora-%OS_VERSION%.repo
-    install:
-      - python3-envycontrol
-      - VK_hdr_layer
+  - from-file: envycontrol.yml
 
   - type: kargs
     arch: x86_64, aarch64
@@ -40,4 +34,3 @@ modules:
       - lockdown=confidentiality
 
   - type: signing
-
