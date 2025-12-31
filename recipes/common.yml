@@ -15,6 +15,7 @@ modules:
         - btrbk
         - corectrl
         - ddrescue
+        - digikam
         - dosbox
         - dvdisaster-gtk3
         - gamescope
