@@ -6,7 +6,7 @@ name: jodera
 description: Custom fedora kinoite image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/aurora
 image-version: latest
 
 modules:
@@ -17,7 +17,6 @@ modules:
 
   - from-file: common.yml
   - from-file: qemu.yml
-  - from-file: sunshine.yml
   - from-file: rocm.yml
   - from-file: bitwarden.yml
 

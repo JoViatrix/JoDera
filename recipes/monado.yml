@@ -1,8 +1,0 @@
-type: dnf
-repos:
-  cleanup: true
-  copr:
-    - joviatrix/monado-git
-install:
-  packages:
-    - monado

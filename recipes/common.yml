@@ -33,7 +33,6 @@ modules:
         - piper
         - podman-compose
         - screen
-        - snapd
         - steam
         - thunderbird
         - waydroid
@@ -57,16 +56,14 @@ modules:
       - aaru.sh
       - cdemu.sh
       - heroic.sh
-      - xone.sh
+      #- xone.sh
       - xpadneo.sh
 
   - from-file: fs-uae.yml
 
-  - from-file: monado.yml
-
-  - from-file: kurve.yml
-
   - from-file: omnissa-horizon.yml
+
+  - from-file: sunshine.yml
 
   - type: default-flatpaks
     configurations:

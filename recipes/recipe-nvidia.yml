@@ -6,7 +6,7 @@ name: jodera-nvidia-acer
 description: Custom fedora kinoite image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/aurora-nvidia-open
 image-version: latest
 
 modules:
@@ -17,12 +17,11 @@ modules:
 
   - from-file: common.yml
   - from-file: qemu.yml
-  - from-file: sunshine.yml
   - from-file: bitwarden.yml
 
   - type: script
     scripts:
-      - nvidia-open.sh
+      #- nvidia-open.sh
       - acer-wmi-battery.sh
 
   - from-file: nvidia-kargs.yml
