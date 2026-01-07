@@ -88,6 +88,7 @@ modules:
           - org.filezillaproject.Filezilla
           - org.kde.haruna
           - io.github.aandrew_me.ytdn
+          - io.github.DenysMb.Kontainer
       
       - notify: true
         scope: system
