@@ -31,6 +31,9 @@ modules:
         - ngspice
         - obs-studio
         - piper
+        - plasma-discover
+        - plasma-discover-flatpak
+        - plasma-discover-notifier
         - podman-compose
         - screen
         - steam
@@ -43,6 +46,7 @@ modules:
         - kate
         - firefox
         - firefox-langpacks
+        - ptyxis
         - toolbox
 
   - from-file: media-common.yml
