@@ -44,6 +44,7 @@ modules:
         - kate
         - firefox
         - firefox-langpacks
+        - toolbox
 
   - from-file: media-common.yml
 

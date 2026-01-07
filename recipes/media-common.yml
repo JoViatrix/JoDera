@@ -2,21 +2,9 @@ modules:
   - type: dnf
     repos:
       cleanup: true
-      nonfree: rpmfusion
+      nonfree: negativo17
     
     install:
       allow-erasing: true
       packages:
-        - alsa-ucm
-        - alsa-utils
-        - gstreamer1-plugin-dav1d
-        - gstreamer1-plugin-libav
-        - gstreamer1-plugins-bad-free
-        - gstreamer1-plugins-good
-        - gstreamer1-plugins-ugly-free
-        - libva-intel-media-driver
-        - pipewire-alsa
-        - pipewire-gstreamer
-        - pipewire-pulseaudio
-        - pipewire-utils
-        - wireplumber
+        - ffmpeg
