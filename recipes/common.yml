@@ -46,6 +46,7 @@ modules:
         - kate
         - firefox
         - firefox-langpacks
+        - input-remapper
         - ptyxis
         - toolbox
 
