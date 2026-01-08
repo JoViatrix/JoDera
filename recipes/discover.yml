@@ -1,0 +1,6 @@
+type: script
+snippets:
+  - "mv /usr/share/applications/org.kde.discover.desktop.disabled /usr/share/applications/org.kde.discover.desktop"
+  - "mv /usr/share/applications/org.kde.discover.flatpak.desktop.disabled /usr/share/applications/org.kde.discover.flatpak.desktop"
+  - "mv /usr/share/applications/org.kde.discover.notifier.desktop.disabled /usr/share/applications/org.kde.discover.notifier.desktop"
+  - "mv /usr/share/applications/org.kde.discover.urlhandler.desktop.disabled /usr/share/applications/org.kde.discover.urlhandler.desktop"

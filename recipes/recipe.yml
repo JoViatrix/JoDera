@@ -16,6 +16,7 @@ modules:
         destination: /
 
   - from-file: common.yml
+  - from-file: discover.yml
   - from-file: qemu.yml
   - from-file: rocm.yml
   - from-file: bitwarden.yml
