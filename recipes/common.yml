@@ -6,7 +6,7 @@ modules:
         - zerotier.repo
       copr:
         - joviatrix/Dvdisaster
-      nonfree: rpmfusion
+      nonfree: negativo17
     install:
       allow-erasing: true
       packages:
