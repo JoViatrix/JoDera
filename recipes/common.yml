@@ -39,7 +39,6 @@ modules:
         - steam
         - thunderbird
         - waydroid
-        - whipper
         - zerotier-one
     remove:
       packages:
