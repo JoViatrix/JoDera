@@ -13,4 +13,4 @@ URL="https://github.com/$REPO/releases/download/$TAG/$ASSET_NAME"
 curl -L -o "/tmp/heroic.rpm" "$URL"
 
 
-rpm-ostree install /tmp/heroic.rpm
+dnf install -y install /tmp/heroic.rpm

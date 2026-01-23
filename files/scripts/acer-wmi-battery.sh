@@ -15,7 +15,7 @@ skopeo copy docker://ghcr.io/joviatrix/akmods-extra:"${KERNEL_FLAVOR}"-"${RELEAS
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
-rpm-ostree install acer-wmi-battery /tmp/rpms/kmods/*acer-wmi-battery*.rpm
+dnf install -y acer-wmi-battery /tmp/rpms/kmods/*acer-wmi-battery*.rpm
 
 cat >/etc/modules-load.d/acer-wmi-battery.conf <<EOF
 acer-wmi-battery

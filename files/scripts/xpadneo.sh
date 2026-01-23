@@ -14,7 +14,8 @@ AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
 sudo dnf config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-multimedia.repo
-rpm-ostree install xpadneo-kmod-common /tmp/rpms/kmods/*xpadneo*.rpm
+dnf install -y xpadneo-kmod-common /tmp/rpms/kmods/*xpadneo*.rpm
+rm /etc/yum.repos.d/fedora-multimedia.repo
 
 cat >/etc/modules-load.d/xpadneo.conf <<EOF
 hid_xpadneo

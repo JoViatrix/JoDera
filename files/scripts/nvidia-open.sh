@@ -20,7 +20,7 @@ echo "Detected NVIDIA driver version: $NVIDIA_VERSION"
 
 wget https://negativo17.org/repos/fedora-nvidia.repo -O /etc/yum.repos.d/fedora-nvidia.repo
 
-rpm-ostree install "xorg-x11-nvidia-$NVIDIA_VERSION" \
+dnf install -y     "xorg-x11-nvidia-$NVIDIA_VERSION" \
                    "nvidia-driver-cuda-$NVIDIA_VERSION" \
                    "nvidia-settings-$NVIDIA_VERSION" \
                    /tmp/rpms/kmods/*kmod-nvidia*.rpm \

@@ -1,6 +1,0 @@
-type: dnf
-install:
-  packages:
-    - cava
-    - qt6-qtwebsockets-devel
-    - python3-websockets
