@@ -30,7 +30,6 @@ modules:
         - nextcloud-client-dolphin
         - ngspice
         - obs-studio
-        - piper
         - plasma-discover
         - plasma-discover-flatpak
         - plasma-discover-notifier
@@ -89,6 +88,9 @@ modules:
           - org.kde.haruna
           - io.github.aandrew_me.ytdn
           - io.github.DenysMb.Kontainer
+          - io.github.denysmb.unify
+          - io.github.pwr_solaar.solaar
+          - net.sourceforge.ddrescueview
       
       - notify: true
         scope: system
