@@ -82,7 +82,6 @@ modules:
           - org.kde.kclock
           - com.vscodium.codium
           - org.speedcrunch.SpeedCrunch
-          - org.openscad.OpenSCAD
           - com.transmissionbt.Transmission
           - org.filezillaproject.Filezilla
           - org.kde.haruna
