@@ -59,7 +59,7 @@ modules:
       - aaru.sh
       - cdemu.sh
       - heroic.sh
-      #- xone.sh
+      - xone.sh
       - xpadneo.sh
 
   - from-file: fs-uae.yml
