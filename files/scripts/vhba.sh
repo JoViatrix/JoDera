@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-echo "Installing cdemu"
+echo "Installing vhba"
 
 dnf5 -y copr enable rok/cdemu
 
@@ -15,7 +15,7 @@ skopeo copy docker://ghcr.io/joviatrix/akmods-extra:"${KERNEL_FLAVOR}"-"${RELEAS
 AKMODS_TARGZ=$(jq -r '.layers[].digest' < /tmp/akmods/manifest.json | cut -d : -f 2)
 tar -xvzf /tmp/akmods/"$AKMODS_TARGZ" -C /tmp/
 
-dnf install -y cdemu-client cdemu-daemon gcdemu /tmp/rpms/kmods/*vhba*.rpm
+dnf install -y /tmp/rpms/kmods/*vhba*.rpm
 
 cat >/etc/modules-load.d/vhba.conf <<EOF
 vhba

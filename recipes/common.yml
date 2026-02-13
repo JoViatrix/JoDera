@@ -54,10 +54,11 @@ modules:
 
   - from-file: k3b.yml
 
+  - from-file: cdemu.yml
+
   - type: script
     scripts:
       - aaru.sh
-      - cdemu.sh
       - heroic.sh
       - xone.sh
       - xpadneo.sh

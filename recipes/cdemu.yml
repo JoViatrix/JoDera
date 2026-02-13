@@ -1,0 +1,15 @@
+modules:
+  - type: script
+    scripts:
+      - vhba.sh
+
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - rok/cdemu
+    install:
+      packages:
+        - cdemu-client
+        - cdemu-daemon
+        - gcdemu
