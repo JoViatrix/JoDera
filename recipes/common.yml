@@ -29,6 +29,7 @@ modules:
         - ncurses-compat-libs
         - nextcloud-client-dolphin
         - ngspice
+        - nodejs-npm
         - obs-studio
         - plasma-discover
         - plasma-discover-flatpak
@@ -63,7 +64,7 @@ modules:
       - xone.sh
       - xpadneo.sh
 
-  - from-file: fs-uae.yml
+  #- from-file: fs-uae.yml
 
   - from-file: omnissa-horizon.yml
 
