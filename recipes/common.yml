@@ -92,6 +92,7 @@ modules:
           - io.github.denysmb.unify
           - io.github.pwr_solaar.solaar
           - net.sourceforge.ddrescueview
+          - com.blitterstudio.amiberry
       
       - notify: true
         scope: system
