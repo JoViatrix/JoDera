@@ -7,6 +7,8 @@ modules:
     install:
       packages:
         - cabextract
+        - mesa-va-drivers.686
+        - mesa-vulkan-drivers.686
         - ntsync-autoload
         - winehq-staging
 
