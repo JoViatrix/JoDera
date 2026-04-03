@@ -37,6 +37,7 @@ modules:
         - podman-compose
         - screen
         - steam
+        - tailscale
         - thunderbird
         - waydroid
         - zerotier-one
