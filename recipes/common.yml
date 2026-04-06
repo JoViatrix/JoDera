@@ -21,6 +21,7 @@ modules:
         - dvdisaster-gtk3
         - gamescope
         - innoextract
+        - input-remapper
         - kaddressbook
         - korganizer
         - librewolf
