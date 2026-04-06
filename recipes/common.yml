@@ -13,6 +13,7 @@ modules:
         - bcache-tools
         - bees
         - btrbk
+        - clamd
         - corectrl
         - ddrescue
         - digikam
@@ -20,7 +21,8 @@ modules:
         - dvdisaster-gtk3
         - gamescope
         - innoextract
-        - kontact
+        - kaddressbook
+        - korganizer
         - librewolf
         - libxcrypt-compat
         - linuxconsoletools
@@ -37,7 +39,6 @@ modules:
         - podman-compose
         - screen
         - steam
-        - tailscale
         - thunderbird
         - waydroid
         - zerotier-one
@@ -46,7 +47,6 @@ modules:
         - kate
         - firefox
         - firefox-langpacks
-        - input-remapper
         - ptyxis
         - toolbox
 
