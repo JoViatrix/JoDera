@@ -1,0 +1,25 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: jodera
+# description will be included in the image's metadata
+description: Custom fedora kinoite image based on prelease version of Fedora to ease release of the main line.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 44
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - from-file: common.yml
+  #- from-file: discover.yml
+  - from-file: qemu.yml
+  - from-file: rocm.yml
+  - from-file: bitwarden.yml
+
+  - type: signing
+
