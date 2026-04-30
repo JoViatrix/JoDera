@@ -21,9 +21,9 @@ modules:
         - falkon
         - mesa-dri-drivers
         - mesa-va-drivers
-        - mesa-vdpau-drivers
         - mesa-vulkan-drivers
         - xorg-x11-drivers
+        - wine
     remove:
       packages:
         - firefox
@@ -35,7 +35,6 @@ modules:
 
   - from-file: enlightenment.yml
   - from-file: k3b.yml
-  - from-file: wine-staging.yml
   - from-file: rocm.yml
   - from-file: bitwarden.yml
   - from-file: cdemu.yml

@@ -3,7 +3,9 @@ modules:
     repos:
       cleanup: true
       files:
-        - https://dl.winehq.org/wine-builds/fedora/43/winehq.repo
+        - https://dl.winehq.org/wine-builds/fedora/44/winehq.repo
+      nonfree: negativo17
+
     install:
       packages:
         - cabextract
