@@ -7,7 +7,7 @@ description: Custom fedora kinoite image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: latest
+image-version: 43
 
 modules:
   - type: files
