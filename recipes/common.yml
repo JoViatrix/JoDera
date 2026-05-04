@@ -41,6 +41,7 @@ modules:
         - podman-compose
         - screen
         - steam
+        - tailscale
         - thunderbird
         - waydroid
         - zerotier-one
@@ -67,8 +68,6 @@ modules:
       - xone.sh
       - xpadneo.sh
 
-  #- from-file: fs-uae.yml
-
   - from-file: omnissa-horizon.yml
 
   - from-file: sunshine.yml
@@ -78,23 +77,24 @@ modules:
       - notify: true
         scope: system
         install:
-          - org.gimp.GIMP
-          - org.kde.skanpage
-          - org.kde.okular
-          - org.freecad.FreeCAD
+          - com.blitterstudio.amiberry
           - com.github.tchx84.Flatseal
-          - org.kde.kclock
-          - com.vscodium.codium
-          - org.speedcrunch.SpeedCrunch
           - com.transmissionbt.Transmission
-          - org.filezillaproject.Filezilla
-          - org.kde.haruna
+          - com.vscodium.codium
           - io.github.aandrew_me.ytdn
           - io.github.DenysMb.Kontainer
           - io.github.denysmb.unify
           - io.github.pwr_solaar.solaar
+          - it.mijorus.gearlever
+          - org.filezillaproject.Filezilla
+          - org.freecad.FreeCAD
+          - org.gimp.GIMP
+          - org.kde.haruna
+          - org.kde.kclock
+          - org.kde.okular
+          - org.kde.skanpage
+          - org.speedcrunch.SpeedCrunch
           - net.sourceforge.ddrescueview
-          - com.blitterstudio.amiberry
       
       - notify: true
         scope: system
