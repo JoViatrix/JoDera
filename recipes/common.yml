@@ -87,6 +87,7 @@ modules:
           - io.github.pwr_solaar.solaar
           - it.mijorus.gearlever
           - org.filezillaproject.Filezilla
+          - org.fkoehler.KTailctl
           - org.freecad.FreeCAD
           - org.gimp.GIMP
           - org.kde.haruna
