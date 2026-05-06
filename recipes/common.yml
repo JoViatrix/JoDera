@@ -77,13 +77,7 @@ modules:
       - notify: true
         scope: system
         install:
-          - org.gimp.GIMP
-          - org.kde.kclock
-          - org.kde.skanpage
-          - org.kde.okular
-          - org.freecad.FreeCAD
-          - com.vscodium.codium
-          - org.speedcrunch.SpeedCrunch
+          - com.blitterstudio.amiberry
           - com.transmissionbt.Transmission
           - com.vscodium.codium
           - io.github.aandrew_me.ytdn
