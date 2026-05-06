@@ -77,8 +77,13 @@ modules:
       - notify: true
         scope: system
         install:
-          - com.blitterstudio.amiberry
-          - com.github.tchx84.Flatseal
+          - org.gimp.GIMP
+          - org.kde.kclock
+          - org.kde.skanpage
+          - org.kde.okular
+          - org.freecad.FreeCAD
+          - com.vscodium.codium
+          - org.speedcrunch.SpeedCrunch
           - com.transmissionbt.Transmission
           - com.vscodium.codium
           - io.github.aandrew_me.ytdn
