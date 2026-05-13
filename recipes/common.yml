@@ -12,11 +12,9 @@ modules:
       packages:
         - bcache-tools
         - bees
-        - btrbk
         - clamav
         - clamd
         - corectrl
-        - ddrescue
         - digikam
         - dosbox
         - dvdisaster-gtk3
@@ -80,21 +78,24 @@ modules:
           - com.blitterstudio.amiberry
           - com.transmissionbt.Transmission
           - com.vscodium.codium
+          - im.riot.Riot
           - io.github.aandrew_me.ytdn
           - io.github.DenysMb.Kontainer
           - io.github.denysmb.unify
           - io.github.pwr_solaar.solaar
+          - io.github.wartybix.Constrict
+          - io.github.wivrn.wivrn
           - it.mijorus.gearlever
           - org.filezillaproject.Filezilla
           - org.fkoehler.KTailctl
           - org.freecad.FreeCAD
           - org.gimp.GIMP
+          - org.kde.gwenview
           - org.kde.haruna
           - org.kde.kclock
           - org.kde.okular
           - org.kde.skanpage
           - org.speedcrunch.SpeedCrunch
-          - net.sourceforge.ddrescueview
       
       - notify: true
         scope: system
