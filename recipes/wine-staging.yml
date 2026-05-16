@@ -10,8 +10,11 @@ modules:
         - cabextract
         - ntsync-autoload
         - winehq-staging
+        - dosbox
 
   - type: script
     snippets:
       - "curl -L -o '/usr/bin/winetricks' 'https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks'"
       - "chmod +x '/usr/bin/winetricks'"
+      - "curl -L -o '/usr/share/bash-completion/completions/winetricks' 'https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks.bash-completion'"
+      - "curl -L -o '/usr/share/man/man1/winetricks.1' 'https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks.1'"

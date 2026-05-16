@@ -3,7 +3,6 @@ modules:
     repos:
       files:
         - https://repo.librewolf.net/librewolf.repo
-        - zerotier.repo
       copr:
         - joviatrix/Dvdisaster
       nonfree: negativo17
@@ -16,7 +15,6 @@ modules:
         - clamd
         - corectrl
         - digikam
-        - dosbox
         - dvdisaster-gtk3
         - gamescope
         - innoextract
@@ -42,7 +40,6 @@ modules:
         - tailscale
         - thunderbird
         - waydroid
-        - zerotier-one
     remove:
       packages:
         - kate
