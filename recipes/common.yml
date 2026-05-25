@@ -92,6 +92,7 @@ modules:
           - org.kde.kclock
           - org.kde.okular
           - org.kde.skanpage
+          - org.libreoffice.LibreOffice
           - org.speedcrunch.SpeedCrunch
       
       - notify: true

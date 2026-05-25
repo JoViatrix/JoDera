@@ -1,9 +1,9 @@
 type: dnf
 install:
   packages:
-    - virt-manager
-    - virt-install
-    - libvirt-daemon-kvm
     - libvirt-daemon-config-network
+    - libvirt-daemon-kvm
     - qemu-system-aarch64
     - qemu-system-riscv
+    - virt-install
+    - virt-manager
