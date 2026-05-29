@@ -63,7 +63,7 @@ modules:
       - heroic.sh
       - xone.sh
       - xpadneo.sh
-      - wineboat.sh
+      - winboat.sh
 
   - from-file: omnissa-horizon.yml
 
