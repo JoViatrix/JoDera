@@ -39,6 +39,7 @@ modules:
         - steam
         - tailscale
         - thunderbird
+        - vkBasalt
         - waydroid
     remove:
       packages:
