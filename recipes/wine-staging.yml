@@ -3,14 +3,13 @@ modules:
     repos:
       cleanup: true
       files:
-        - https://dl.winehq.org/wine-builds/fedora/44/winehq.repo
+        - https://download.opensuse.org/repositories/Emulators:Wine:Fedora/Fedora_%OS_VERSION%/Emulators:Wine:Fedora.repo
 
     install:
       packages:
         - cabextract
         - ntsync-autoload
-        - selinux-policy-devel
-        - winehq-staging
+        - wine-staging
         - dosbox
 
   - type: script
