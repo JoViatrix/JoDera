@@ -1,3 +1,5 @@
 type: script
 snippets:
+  - "curl -L -o '/tmp/OMNISSA-PACKAGING-GPG-RSA-KEY.pub' 'https://packages.omnissa.com/horizon/keys/OMNISSA-PACKAGING-GPG-RSA-KEY.pub'"
+  - "rpm --import '/tmp/OMNISSA-PACKAGING-GPG-RSA-KEY.pub'"
   - "dnf install -y --setopt=tsflags=noscripts https://download3.omnissa.com/software/CART27FQ1_LIN64_RPMPKG_2603/Omnissa-Horizon-Client-2603-8.18.0-24120621798.x64.rpm"

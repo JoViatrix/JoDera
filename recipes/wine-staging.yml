@@ -9,6 +9,7 @@ modules:
       packages:
         - cabextract
         - ntsync-autoload
+        - selinux-policy-devel
         - winehq-staging
         - dosbox
 
