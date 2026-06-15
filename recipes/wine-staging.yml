@@ -9,7 +9,7 @@ modules:
       packages:
         - cabextract
         - ntsync-autoload
-        - wine-staging
+        - winehq-staging
         - dosbox
 
   - type: script
