@@ -34,7 +34,6 @@ modules:
         - plasma-discover
         - plasma-discover-flatpak
         - plasma-discover-notifier
-        - podman-compose
         - screen
         - steam
         - tailscale
