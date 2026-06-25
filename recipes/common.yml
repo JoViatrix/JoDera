@@ -16,6 +16,7 @@ modules:
         - corectrl
         - digikam
         - dvdisaster-gtk3
+        - fuse-libs
         - gamescope
         - innoextract
         - input-remapper
