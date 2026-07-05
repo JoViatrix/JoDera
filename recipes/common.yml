@@ -38,7 +38,6 @@ modules:
         - screen
         - steam
         - tailscale
-        - thunderbird
         - vkBasalt
         - waydroid
     remove:
@@ -95,6 +94,7 @@ modules:
           - org.kde.okular
           - org.kde.skanpage
           - org.libreoffice.LibreOffice
+          - org.mozilla.thunderbird
           - org.speedcrunch.SpeedCrunch
       
       - notify: true
