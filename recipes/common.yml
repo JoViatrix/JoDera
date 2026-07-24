@@ -10,7 +10,6 @@ modules:
       allow-erasing: true
       packages:
         - bcache-tools
-        - bees
         - clamav
         - clamd
         - corectrl
@@ -31,7 +30,6 @@ modules:
         - nextcloud-client-dolphin
         - ngspice
         - nodejs-npm
-        - obs-studio
         - plasma-discover
         - plasma-discover-flatpak
         - plasma-discover-notifier
@@ -74,6 +72,8 @@ modules:
         scope: system
         install:
           - com.blitterstudio.amiberry
+          - com.obsproject.Studio
+          - com.obsproject.Studio.Plugin.OBSVkCapture
           - com.transmissionbt.Transmission
           - com.vscodium.codium
           - im.riot.Riot
