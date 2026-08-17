@@ -1,0 +1,8 @@
+type: dnf
+repos:
+  cleanup: true
+  copr:
+    - bahram-f73/winboat
+install:
+  packages:
+    - winboat-nightly

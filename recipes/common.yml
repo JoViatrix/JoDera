@@ -66,6 +66,8 @@ modules:
       - xpadneo.sh
       # - winboat.sh
 
+  - from-file: winboat.yml
+
   - from-file: omnissa-horizon.yml
 
   - from-file: sunshine.yml
