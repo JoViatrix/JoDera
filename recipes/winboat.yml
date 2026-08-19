@@ -5,4 +5,5 @@ repos:
     - bahram-f73/winboat
 install:
   packages:
+    - podman-compose
     - winboat-nightly
