@@ -11,6 +11,7 @@ modules:
       packages:
         - atuin-all-users
         - bcache-tools
+        - chezmoi
         - clamav
         - clamd
         - corectrl
@@ -114,6 +115,6 @@ modules:
         install:
           - org.DolphinEmu.dolphin-emu
 
-  - type: chezmoi
-    all-users: true
-    file-conflict-policy: replace
+#  - type: chezmoi
+#    all-users: true
+#    file-conflict-policy: replace
