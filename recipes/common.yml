@@ -103,7 +103,9 @@ modules:
           - org.kde.okular
           - org.kde.skanpage
           - org.libreoffice.LibreOffice
+          - org.libretro.RetroArch
           - org.mozilla.thunderbird
+          - org.scummvm.ScummVM
           - org.speedcrunch.SpeedCrunch
 
       - notify: true
@@ -114,6 +116,11 @@ modules:
           title: Dolphin Emu
         install:
           - org.DolphinEmu.dolphin-emu
+
+  - type: systemd
+    system:
+      enabled:
+      - tailscaled.service
 
   - type: chezmoi
     repository: https://github.com/JoViatrix/JoDera-dotfiles
