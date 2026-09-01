@@ -115,6 +115,7 @@ modules:
         install:
           - org.DolphinEmu.dolphin-emu
 
-#  - type: chezmoi
-#    all-users: true
-#    file-conflict-policy: replace
+  - type: chezmoi
+    repository: https://github.com/JoViatrix/JoDera-dotfiles
+    all-users: true
+    file-conflict-policy: skip
