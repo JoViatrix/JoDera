@@ -1,9 +1,0 @@
-type: dnf
-repos:
-  cleanup: true
-  copr:
-    - bahram-f73/winboat
-install:
-  packages:
-    - podman-compose
-    - winboat-nightly

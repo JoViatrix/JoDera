@@ -66,7 +66,6 @@ modules:
       - heroic.sh
       - xone.sh
       - xpadneo.sh
-      # - winboat.sh
 
   - from-file: winboat.yml
 
@@ -81,6 +80,7 @@ modules:
         install:
           - com.blitterstudio.amiberry
           - com.borgbase.Vorta
+          - com.orcaslicer.OrcaSlicer
           - com.transmissionbt.Transmission
           - com.vscodium.codium
           - im.riot.Riot
