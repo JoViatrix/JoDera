@@ -101,6 +101,7 @@ modules:
           - org.kde.skanpage
           - org.libreoffice.LibreOffice
           - org.libretro.RetroArch
+          - org.luanti.luanti
           - org.mozilla.thunderbird
           - org.scummvm.ScummVM
           - org.speedcrunch.SpeedCrunch
