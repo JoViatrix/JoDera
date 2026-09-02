@@ -92,6 +92,7 @@ modules:
           - org.fkoehler.KTailctl
           - org.freecad.FreeCAD
           - org.gimp.GIMP
+          - com.gitlab.cutecom.cutecom
           - org.kde.digikam
           - org.kde.gwenview
           - org.kde.haruna
@@ -105,7 +106,6 @@ modules:
           - org.mozilla.thunderbird
           - org.scummvm.ScummVM
           - org.speedcrunch.SpeedCrunch
-          - uk.org.greenend.chiark.sgtatham.putty
 
       - notify: true
         scope: system
@@ -125,6 +125,10 @@ modules:
     repository: https://github.com/JoViatrix/JoDera-dotfiles
     all-users: true
     file-conflict-policy: skip
+
+  - type: justfiles
+    validate: true
+    install: true
 
   - type: kargs
     arch: x86_64, aarch64
