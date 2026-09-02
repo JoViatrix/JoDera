@@ -92,6 +92,7 @@ modules:
           - io.github.wartybix.Constrict
           - io.github.wivrn.wivrn
           - it.mijorus.gearlever
+          - org.blender.Blender
           - org.filezillaproject.Filezilla
           - org.fkoehler.KTailctl
           - org.freecad.FreeCAD
