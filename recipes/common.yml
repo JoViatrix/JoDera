@@ -83,6 +83,7 @@ modules:
           - io.github.DenysMb.Kontainer
           - io.github.denysmb.unify
           - io.github.pwr_solaar.solaar
+          - io.github.ra3xdh.qucs_s
           - io.github.radiolamp.mangojuice
           - io.github.wartybix.Constrict
           - io.github.wivrn.wivrn
