@@ -28,9 +28,4 @@ modules:
   - from-file: nvidia-kargs.yml
   - from-file: envycontrol.yml
 
-  - type: kargs
-    arch: x86_64, aarch64
-    kargs:
-      - lockdown=confidentiality
-
   - type: signing

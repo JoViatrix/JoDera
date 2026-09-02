@@ -34,22 +34,16 @@ modules:
         - nodejs-npm
         - obs-studio
         - obs-studio-plugin-vkcapture
-        - plasma-discover
-        - plasma-discover-flatpak
-        - plasma-discover-notifier
         - power-profiles-daemon
         - ripgrep
-        - screen
         - steam
         - tailscale
         - vkBasalt
         - waydroid
     remove:
       packages:
-        - kate
         - firefox
         - firefox-langpacks
-        - ptyxis
         - toolbox
 
   - from-file: media-common.yml
@@ -89,6 +83,7 @@ modules:
           - io.github.DenysMb.Kontainer
           - io.github.denysmb.unify
           - io.github.pwr_solaar.solaar
+          - io.github.radiolamp.mangojuice
           - io.github.wartybix.Constrict
           - io.github.wivrn.wivrn
           - it.mijorus.gearlever
@@ -102,12 +97,14 @@ modules:
           - org.kde.haruna
           - org.kde.kclock
           - org.kde.okular
+          - org.kde.qrca
           - org.kde.skanpage
           - org.libreoffice.LibreOffice
           - org.libretro.RetroArch
           - org.mozilla.thunderbird
           - org.scummvm.ScummVM
           - org.speedcrunch.SpeedCrunch
+          - uk.org.greenend.chiark.sgtatham.putty
 
       - notify: true
         scope: system
@@ -127,3 +124,9 @@ modules:
     repository: https://github.com/JoViatrix/JoDera-dotfiles
     all-users: true
     file-conflict-policy: skip
+
+  - type: kargs
+    arch: x86_64, aarch64
+    kargs:
+      - lockdown=confidentiality
+      - amdgpu.ppfeaturemask=0xffffffff
