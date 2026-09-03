@@ -8,9 +8,10 @@ modules:
     install:
       packages:
         - cabextract
-        - ntsync-autoload
-        - winehq-staging
         - dosbox
+        - ntsync-autoload
+        - pipewire-alsa.i686
+        - winehq-staging
 
   - type: script
     snippets:
