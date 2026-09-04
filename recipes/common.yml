@@ -15,7 +15,6 @@ modules:
         - clamav
         - clamd
         - corectrl
-        - dvdisaster-gtk3
         - flatpak-builder
         - fuse-libs
         - gamescope
@@ -117,6 +116,17 @@ modules:
           title: Dolphin Emu
         install:
           - org.DolphinEmu.dolphin-emu
+
+      - notify: true
+        scope: system
+        repo:
+          url: https://gitlab.com/JoViatrix/flatpak-repo/-/raw/main/Inihub.flatpakrepo
+          name: inihub
+          title: Inihub
+        install:
+          - io.github.aarudps.Aaru
+          - io.github.OpenLoco.OpenLoco
+          - io.github.speed47.dvdisaster 
 
   - type: systemd
     system:
