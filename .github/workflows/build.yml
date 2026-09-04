@@ -15,8 +15,8 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
   cancel-in-progress: true
 jobs:
-  bluebuild:
-    name: Build Custom Image
+  build-base:
+    name: Build base Images - ${{ matrix.recipe }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -25,20 +25,14 @@ jobs:
     strategy:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
-        base:
+        recipe:
           - recipe-base.yml
           - recipe-lite.yml
-        recipe:
-          - recipe.yml
-          - recipe-nvidia.yml
-          - recipe-nvidia-generic.yml
-          - recipe-prerelease.yml
     steps:
-      # the build is fully handled by the reusable github action
       - name: Build base Images
         uses: blue-build/github-action@v1.12
         with:
-          recipe: ${{ matrix.base }}
+          recipe: ${{ matrix.recipe }}
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
@@ -46,6 +40,23 @@ jobs:
           maximize_build_space: true
           build_chunked_oci: true
 
+  build-custom:
+    name: Build custom Images - ${{ matrix.recipe }}
+    runs-on: ubuntu-latest
+    needs: build-base
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    strategy:
+      fail-fast: false # stop GH from cancelling all matrix builds if one fails
+      matrix:
+        recipe:
+          - recipe.yml
+          - recipe-nvidia.yml
+          - recipe-nvidia-generic.yml
+          - recipe-prerelease.yml
+    steps:
       - name: Build Custom Images
         uses: blue-build/github-action@v1.12
         with:
