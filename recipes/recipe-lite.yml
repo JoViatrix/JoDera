@@ -37,9 +37,9 @@ modules:
   - from-file: bitwarden.yml
   - from-file: cdemu.yml
 
-  - type: script
-    scripts:
-      - aaru.sh
+  #- type: script
+  #  scripts:
+  #    - aaru.sh
 
   - type: default-flatpaks
     configurations:
