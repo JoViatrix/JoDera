@@ -56,7 +56,7 @@ modules:
 
   - type: script
     scripts:
-      - aaru.sh
+      #- aaru.sh
       - heroic.sh
       - xone.sh
       - xpadneo.sh
