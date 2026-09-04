@@ -34,6 +34,7 @@ modules:
         - nodejs-npm
         - obs-studio
         - obs-studio-plugin-vkcapture
+        - pipewire-alsa.i686
         - power-profiles-daemon
         - ripgrep
         - steam

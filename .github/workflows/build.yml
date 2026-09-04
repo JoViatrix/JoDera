@@ -25,16 +25,28 @@ jobs:
     strategy:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
-        recipe:
-          # !! Add your recipes here
-          - recipe.yml
+        base:
+          - recipe-base.yml
           - recipe-lite.yml
+        recipe:
+          - recipe.yml
           - recipe-nvidia.yml
           - recipe-nvidia-generic.yml
           - recipe-prerelease.yml
     steps:
       # the build is fully handled by the reusable github action
-      - name: Build Custom Image
+      - name: Build base Images
+        uses: blue-build/github-action@v1.12
+        with:
+          recipe: ${{ matrix.base }}
+          COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
+          registry_token: ${{ github.token }}
+          pr_event_number: ${{ github.event.number }}
+
+          maximize_build_space: true
+          build_chunked_oci: true
+
+      - name: Build Custom Images
         uses: blue-build/github-action@v1.12
         with:
           recipe: ${{ matrix.recipe }}
@@ -42,6 +54,5 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
 
-          # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
           build_chunked_oci: false

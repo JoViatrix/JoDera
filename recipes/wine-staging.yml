@@ -10,7 +10,6 @@ modules:
         - cabextract
         - dosbox
         - ntsync-autoload
-        - pipewire-alsa.i686
         - winehq-staging
 
   - type: script

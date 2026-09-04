@@ -6,16 +6,10 @@ name: jodera-nvidia
 description: Custom fedora kinoite image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/joviatrix/jodera-base
 image-version: latest
 
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: /
-
-  - from-file: common.yml
   - from-file: qemu.yml
   - from-file: bitwarden.yml
 
