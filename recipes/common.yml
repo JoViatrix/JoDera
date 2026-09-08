@@ -29,7 +29,6 @@ modules:
         - mangohud
         - ncurses-compat-libs
         - nextcloud-client-dolphin
-        - ngspice
         - nodejs-npm
         - obs-studio
         - obs-studio-plugin-vkcapture
@@ -126,7 +125,8 @@ modules:
         install:
           - io.github.aarudps.Aaru
           - io.github.OpenLoco.OpenLoco
-          - io.github.speed47.dvdisaster 
+          - io.github.speed47.dvdisaster
+          - io.sourceforge.ngspice.ngspice
 
   - type: systemd
     system:
