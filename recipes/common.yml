@@ -106,6 +106,7 @@ modules:
           - org.mozilla.thunderbird
           - org.scummvm.ScummVM
           - org.speedcrunch.SpeedCrunch
+          - org.triliumnotes.Trilium
 
       - notify: true
         scope: system
