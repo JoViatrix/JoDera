@@ -5,6 +5,8 @@ configurations:
     install:
       - com.blitterstudio.amiberry
       - com.borgbase.Vorta
+      - com.jeffser.Nocturne
+      - com.makemkv.MakeMKV
       - com.orcaslicer.OrcaSlicer
       - com.transmissionbt.Transmission
       - com.vscodium.codium
@@ -13,6 +15,7 @@ configurations:
       - io.github.aandrew_me.ytdn
       - io.github.DenysMb.Kontainer
       - io.github.denysmb.unify
+      - io.github.josephmawa.Gauge
       - io.github.pwr_solaar.solaar
       - io.github.ra3xdh.qucs_s
       - io.github.radiolamp.mangojuice
@@ -23,6 +26,7 @@ configurations:
       - org.filezillaproject.Filezilla
       - org.fkoehler.KTailctl
       - org.freecad.FreeCAD
+      - org.inkscape.Inkscape
       - org.gimp.GIMP
       - com.gitlab.cutecom.cutecom
       - org.kde.digikam
@@ -38,6 +42,8 @@ configurations:
       - org.mozilla.thunderbird
       - org.scummvm.ScummVM
       - org.speedcrunch.SpeedCrunch
+      - org.triliumnotes.Trilium
+      - org.zotero.Zotero   
   
   - notify: true
     scope: system
