@@ -37,16 +37,22 @@ modules:
   - from-file: bitwarden.yml
   - from-file: cdemu.yml
 
-  #- type: script
-  #  scripts:
-  #    - aaru.sh
-
   - type: default-flatpaks
     configurations:
       - notify: true
         scope: system
         install:
           - org.kde.falkon
+
+      - notify: true
+        scope: system
+        repo:
+          url: https://gitlab.com/JoViatrix/flatpak-repo/-/raw/main/Inihub.flatpakrepo
+          name: inihub
+          title: Inihub
+        install:
+          - io.github.aarudps.Aaru
+          - io.github.speed47.dvdisaster
 
   - type: signing
 

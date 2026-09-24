@@ -10,15 +10,11 @@ base-image: ghcr.io/joviatrix/jodera-base
 image-version: latest
 
 modules:
-  - from-file: qemu.yml
-  - from-file: bitwarden.yml
-
   - type: script
     scripts:
       - nvidia.sh
 
   - from-file: nvidia-kargs.yml
-  - from-file: envycontrol.yml
 
   - type: signing
 

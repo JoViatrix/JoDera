@@ -1,0 +1,61 @@
+type: default-flatpaks
+configurations:
+  - notify: true
+    scope: system
+    install:
+      - com.blitterstudio.amiberry
+      - com.borgbase.Vorta
+      - com.orcaslicer.OrcaSlicer
+      - com.transmissionbt.Transmission
+      - com.vscodium.codium
+      - im.riot.Riot
+      - info.cemu.Cemu
+      - io.github.aandrew_me.ytdn
+      - io.github.DenysMb.Kontainer
+      - io.github.denysmb.unify
+      - io.github.pwr_solaar.solaar
+      - io.github.ra3xdh.qucs_s
+      - io.github.radiolamp.mangojuice
+      - io.github.wartybix.Constrict
+      - io.github.wivrn.wivrn
+      - it.mijorus.gearlever
+      - org.blender.Blender
+      - org.filezillaproject.Filezilla
+      - org.fkoehler.KTailctl
+      - org.freecad.FreeCAD
+      - org.gimp.GIMP
+      - com.gitlab.cutecom.cutecom
+      - org.kde.digikam
+      - org.kde.gwenview
+      - org.kde.haruna
+      - org.kde.kclock
+      - org.kde.okular
+      - org.kde.qrca
+      - org.kde.skanpage
+      - org.libreoffice.LibreOffice
+      - org.libretro.RetroArch
+      - org.luanti.luanti
+      - org.mozilla.thunderbird
+      - org.scummvm.ScummVM
+      - org.speedcrunch.SpeedCrunch
+  
+  - notify: true
+    scope: system
+    repo:
+      url: https://flatpak.dolphin-emu.org/dev.flatpakrepo
+      name: dolphin-emu
+      title: Dolphin Emu
+    install:
+      - org.DolphinEmu.dolphin-emu
+
+  - notify: true
+    scope: system
+    repo:
+      url: https://gitlab.com/JoViatrix/flatpak-repo/-/raw/main/Inihub.flatpakrepo
+      name: inihub
+      title: Inihub
+    install:
+      - io.github.aarudps.Aaru
+      - io.github.OpenLoco.OpenLoco
+      - io.github.speed47.dvdisaster
+      - io.sourceforge.ngspice.ngspice

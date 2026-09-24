@@ -10,9 +10,13 @@ base-image: ghcr.io/joviatrix/jodera-base
 image-version: latest
 
 modules:
+  - from-file: winboat.yml
+  - from-file: sunshine.yml
   - from-file: qemu.yml
+  - type: script
+    scripts:
+      - xone.sh
   - from-file: rocm.yml
-  - from-file: bitwarden.yml
 
   - type: signing
 
