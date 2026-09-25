@@ -1,0 +1,22 @@
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - lionheartp/Hyprland
+        - amancode22/regreet
+    install:
+      packages:
+        - hyprland
+        - greetd
+        - regreet
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service
+
+  - type: files
+    files:
+      - source: greetd
+        destination: /

@@ -1,0 +1,58 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: joderaland
+# description will be included in the image's metadata
+description: Custom experimental fedora image with hyprland
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - type: dnf
+    install:
+      packages:
+        - mesa-dri-drivers
+        - mesa-va-drivers
+        - mesa-vulkan-drivers
+        - xorg-x11-drivers
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
+
+  - type: script
+    snippets:
+      - "systemctl set-default graphical.target"
+
+  - from-file: hyprland.yml
+  - from-file: k3b.yml
+  - from-file: wine-staging.yml
+  - from-file: bitwarden.yml
+  - from-file: cdemu.yml
+
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - org.kde.falkon
+
+      - notify: true
+        scope: system
+        repo:
+          url: https://gitlab.com/JoViatrix/flatpak-repo/-/raw/main/Inihub.flatpakrepo
+          name: inihub
+          title: Inihub
+        install:
+          - io.github.aarudps.Aaru
+          - io.github.speed47.dvdisaster
+
+  - type: signing
+
