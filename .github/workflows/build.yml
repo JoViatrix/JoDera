@@ -31,7 +31,7 @@ jobs:
           - recipe-joderaland.yml
     steps:
       - name: Build base Images
-        uses: blue-build/github-action@v1.12
+        uses: blue-build/github-action@v1.13
         with:
           recipe: ${{ matrix.recipe }}
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
@@ -59,7 +59,7 @@ jobs:
           - recipe-prerelease.yml
     steps:
       - name: Build Custom Images
-        uses: blue-build/github-action@v1.12
+        uses: blue-build/github-action@v1.13
         with:
           recipe: ${{ matrix.recipe }}
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
