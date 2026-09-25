@@ -28,6 +28,7 @@ jobs:
         recipe:
           - recipe-base.yml
           - recipe-lite.yml
+          - recipe-joderaland.yml
     steps:
       - name: Build base Images
         uses: blue-build/github-action@v1.12
