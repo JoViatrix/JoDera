@@ -4,12 +4,14 @@ modules:
       cleanup: true
       copr:
         - lionheartp/Hyprland
-        - amancode22/regreet
+        - runesign/iio-hyprland
     install:
       packages:
         - hyprland
+        - iio-hyprland
+        - iio-sensor-proxy
         - greetd
-        - regreet
+        - tuigreet
 
   - type: systemd
     system:
