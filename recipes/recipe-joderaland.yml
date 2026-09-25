@@ -32,27 +32,9 @@ modules:
       - "systemctl set-default graphical.target"
 
   - from-file: hyprland.yml
-  - from-file: k3b.yml
-  - from-file: wine-staging.yml
-  - from-file: bitwarden.yml
-  - from-file: cdemu.yml
+  - from-file: common.yml
 
-  - type: default-flatpaks
-    configurations:
-      - notify: true
-        scope: system
-        install:
-          - org.kde.falkon
-
-      - notify: true
-        scope: system
-        repo:
-          url: https://gitlab.com/JoViatrix/flatpak-repo/-/raw/main/Inihub.flatpakrepo
-          name: inihub
-          title: Inihub
-        install:
-          - io.github.aarudps.Aaru
-          - io.github.speed47.dvdisaster
+  - from-file: flatpak-defaults.yml
 
   - type: signing
 
