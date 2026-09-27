@@ -7,10 +7,11 @@ modules:
         - runesign/iio-hyprland
     install:
       packages:
+        - fuzzel
+        - greetd
         - hyprland
         - iio-hyprland
         - iio-sensor-proxy
-        - greetd
         - tuigreet
 
   - type: systemd
