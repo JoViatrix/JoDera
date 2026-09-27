@@ -7,6 +7,7 @@ modules:
         - runesign/iio-hyprland
     install:
       packages:
+        - cascadia-mono-nf-fonts
         - fuzzel
         - greetd
         - hyprland
