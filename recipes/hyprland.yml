@@ -13,6 +13,7 @@ modules:
         - iio-hyprland
         - iio-sensor-proxy
         - tuigreet
+        - yambar
 
   - type: systemd
     system:
