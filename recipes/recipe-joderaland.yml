@@ -36,5 +36,10 @@ modules:
 
   - from-file: flatpak-defaults.yml
 
+  - type: kargs
+    arch: x86_64, aarch64
+    kargs:
+      - lockdown=confidentiality
+
   - type: signing
 

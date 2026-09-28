@@ -25,7 +25,6 @@ modules:
         - mangohud
         - ncurses-compat-libs
         - nextcloud-client-dolphin
-        - nodejs-npm
         - obs-studio
         - obs-studio-plugin-vkcapture
         - pipewire-alsa.i686
@@ -74,9 +73,3 @@ modules:
   - type: justfiles
     validate: true
     install: true
-
-  - type: kargs
-    arch: x86_64, aarch64
-    kargs:
-      - lockdown=confidentiality
-      - amdgpu.ppfeaturemask=0xffffffff
