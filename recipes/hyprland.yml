@@ -8,13 +8,16 @@ modules:
     install:
       packages:
         - cascadia-mono-nf-fonts
-        - fuzzel
         - greetd
+        - hypridle
         - hyprland
+        - hyprlauncher
+        - hyprlock
+        - hyprpicker
         - iio-hyprland
         - iio-sensor-proxy
         - tuigreet
-        - yambar
+        - waybar-git
 
   - type: systemd
     system:
