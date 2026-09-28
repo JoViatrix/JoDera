@@ -1,0 +1,21 @@
+modules:
+  - type: dnf
+    repos:
+      nonfree: negativo17
+    install:
+      allow-erasing: true
+      packages:
+        - bcache-tools
+        - corectrl
+        - flatpak-builder
+        - kaddressbook
+        - korganizer
+        - waydroid
+
+  - from-file: k3b.yml
+
+  - type: kargs
+    arch: x86_64, aarch64
+    kargs:
+      - lockdown=confidentiality
+      - amdgpu.ppfeaturemask=0xffffffff
