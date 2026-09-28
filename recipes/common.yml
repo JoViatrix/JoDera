@@ -8,16 +8,11 @@ modules:
       allow-erasing: true
       packages:
         - atuin-all-users
-        - bcache-tools
         - chezmoi
-        - corectrl
-        - flatpak-builder
         - fuse-libs
         - gamescope
         - innoextract
         - input-remapper
-        - kaddressbook
-        - korganizer
         - librewolf
         - libxcrypt-compat
         - linuxconsoletools
@@ -33,7 +28,6 @@ modules:
         - steam
         - tailscale
         - vkBasalt
-        - waydroid
     remove:
       packages:
         - firefox
@@ -43,8 +37,6 @@ modules:
   - from-file: media-common.yml
 
   - from-file: wine-staging.yml
-
-  - from-file: k3b.yml
 
   - from-file: cdemu.yml
 
