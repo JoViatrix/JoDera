@@ -17,7 +17,7 @@ modules:
         - iio-hyprland
         - iio-sensor-proxy
         - tuigreet
-        - waybar-git
+        - waybar
 
   - type: systemd
     system:
