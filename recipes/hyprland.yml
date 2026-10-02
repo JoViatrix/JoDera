@@ -16,6 +16,7 @@ modules:
         - hyprpicker
         - iio-hyprland
         - iio-sensor-proxy
+        - NetworkManager-tui
         - tuigreet
         - waybar
 
@@ -26,5 +27,5 @@ modules:
 
   - type: files
     files:
-      - source: greetd
+      - source: hyprland
         destination: /

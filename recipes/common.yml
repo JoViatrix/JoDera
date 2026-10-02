@@ -33,6 +33,8 @@ modules:
         - firefox
         - firefox-langpacks
         - toolbox
+        - kate
+        - kwrite
 
   - from-file: media-common.yml
 
