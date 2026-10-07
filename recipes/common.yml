@@ -13,6 +13,7 @@ modules:
         - gamescope
         - innoextract
         - input-remapper
+        - ksh
         - librewolf
         - libxcrypt-compat
         - linuxconsoletools
