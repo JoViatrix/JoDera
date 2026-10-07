@@ -32,6 +32,7 @@ configurations:
       - org.kde.digikam
       - org.kde.gwenview
       - org.kde.haruna
+      - org.kde.kate
       - org.kde.kclock
       - org.kde.okular
       - org.kde.qrca
