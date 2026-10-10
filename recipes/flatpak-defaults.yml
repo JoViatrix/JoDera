@@ -15,6 +15,7 @@ configurations:
       - io.github.aandrew_me.ytdn
       - io.github.DenysMb.Kontainer
       - io.github.denysmb.unify
+      - io.github.dosbox-staging
       - io.github.josephmawa.Gauge
       - io.github.pwr_solaar.solaar
       - io.github.ra3xdh.qucs_s
