@@ -44,7 +44,16 @@ configurations:
       - org.scummvm.ScummVM
       - org.speedcrunch.SpeedCrunch
       - org.triliumnotes.Trilium
-      - org.zotero.Zotero   
+      - org.zotero.Zotero
+
+  - notify: true
+    scope: system
+    repo:
+      url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+      name: flathub-beta
+      title: flathub beta
+    install:
+      - org.openscad.OpenSCAD
   
   - notify: true
     scope: system
