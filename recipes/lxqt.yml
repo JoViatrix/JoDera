@@ -1,0 +1,13 @@
+modules:
+  - type: dnf
+    install:
+      packages:
+        - greetd
+        - lxqt-panel
+        - lxqt-wayland-session
+        - tuigreet
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service

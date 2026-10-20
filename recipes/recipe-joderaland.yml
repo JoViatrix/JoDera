@@ -31,7 +31,7 @@ modules:
     snippets:
       - "systemctl set-default graphical.target"
 
-  - from-file: hyprland.yml
+  - from-file: lxqt.yml
   - from-file: common.yml
 
   - from-file: flatpak-defaults.yml
