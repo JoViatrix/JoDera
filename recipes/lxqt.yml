@@ -3,7 +3,10 @@ modules:
     install:
       packages:
         - greetd
+        - lxqt-config
         - lxqt-panel
+        - lxqt-session
+        - lxqt-themes
         - lxqt-wayland-session
         - tuigreet
 
