@@ -5,16 +5,17 @@ configurations:
     install:
       - com.blitterstudio.amiberry
       - com.borgbase.Vorta
-      - com.jeffser.Nocturne
       - com.makemkv.MakeMKV
       - com.orcaslicer.OrcaSlicer
       - com.transmissionbt.Transmission
+      - com.unicornsonlsd.finamp
       - com.vscodium.codium
       - im.riot.Riot
       - info.cemu.Cemu
       - io.github.aandrew_me.ytdn
       - io.github.DenysMb.Kontainer
       - io.github.denysmb.unify
+      - io.github.finefindus.Hieroglyphic
       - io.github.josephmawa.Gauge
       - io.github.pwr_solaar.solaar
       - io.github.ra3xdh.qucs_s
@@ -22,6 +23,8 @@ configurations:
       - io.github.wartybix.Constrict
       - io.github.wivrn.wivrn
       - it.mijorus.gearlever
+      - moe.tsuna.tsukimi
+      - net.ankiweb.Anki
       - org.blender.Blender
       - org.filezillaproject.Filezilla
       - org.fkoehler.KTailctl
