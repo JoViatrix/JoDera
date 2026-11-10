@@ -3,7 +3,7 @@ modules:
     repos:
       cleanup: true
       files:
-        - https://download.opensuse.org/repositories/Emulators:Wine:Fedora/Fedora_44/Emulators:Wine:Fedora.repo
+        - https://download.opensuse.org/repositories/Emulators:Wine:Fedora/Fedora_Rawhide/Emulators:Wine:Fedora.repo
 
     install:
       packages:
