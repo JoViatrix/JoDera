@@ -1,19 +1,22 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: jodera-nvidia
+name: jodera-base-nvidia-open
 # description will be included in the image's metadata
 description: Custom fedora kinoite image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/joviatrix/jodera-base
+base-image: ghcr.io/blue-build/base-images/fedora-kinoite-nvidia-open
 image-version: latest
 
 modules:
-  - type: script
-    scripts:
-      - nvidia.sh
+  - type: files
+    files:
+      - source: system
+        destination: /
 
+  - from-file: common.yml
+  - from-file: common-extra.yml
   - from-file: nvidia-kargs.yml
 
   - type: signing

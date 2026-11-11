@@ -1,0 +1,22 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: jodera-base-beta
+# description will be included in the image's metadata
+description: Custom fedora kinoite image.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: beta
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - from-file: common.yml
+  - from-file: common-extra.yml
+
+  - type: signing
+

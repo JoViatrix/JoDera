@@ -27,6 +27,9 @@ jobs:
       matrix:
         recipe:
           - recipe-base.yml
+          - recipe-base-beta.yml
+          - recipe-base-nvidia-legacy.yml
+          - recipe-base-nvidia-open.yml
           - recipe-lite.yml
           - recipe-joderaland.yml
     steps:
@@ -55,7 +58,6 @@ jobs:
         recipe:
           - recipe.yml
           - recipe-nvidia.yml
-          - recipe-nvidia-generic.yml
           - recipe-prerelease.yml
     steps:
       - name: Build Custom Images

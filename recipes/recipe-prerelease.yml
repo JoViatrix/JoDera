@@ -6,7 +6,7 @@ name: jodera
 description: Custom fedora kinoite image based on prelease version of Fedora to ease release of the main line.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/joviatrix/jodera-base
+base-image: ghcr.io/joviatrix/jodera-base-beta
 image-version: latest
 
 modules:
