@@ -1,7 +1,6 @@
 modules:
   - type: dnf
     repos:
-      files:
       nonfree: negativo17
     install:
       allow-erasing: true
