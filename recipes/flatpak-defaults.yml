@@ -22,6 +22,7 @@ configurations:
       - io.github.radiolamp.mangojuice
       - io.github.wartybix.Constrict
       - io.github.wivrn.wivrn
+      - io.gitlab.librewolf-community
       - it.mijorus.gearlever
       - moe.tsuna.tsukimi
       - net.ankiweb.Anki
