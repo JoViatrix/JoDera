@@ -18,8 +18,7 @@ modules:
         - mangohud
         - ncurses-compat-libs
         - nextcloud-client-dolphin
-        - obs-studio
-        - obs-studio-plugin-vkcapture
+        - obs-studio-plugin-vkcapture-hook-libs
         - pipewire-alsa.i686
         - power-profiles-daemon
         - ripgrep

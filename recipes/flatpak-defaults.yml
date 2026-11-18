@@ -6,6 +6,8 @@ configurations:
       - com.blitterstudio.amiberry
       - com.borgbase.Vorta
       - com.makemkv.MakeMKV
+      - com.obsproject.Studio
+      - com.obsproject.Studio.Plugin.OBSVkCapture
       - com.orcaslicer.OrcaSlicer
       - com.transmissionbt.Transmission
       - com.unicornsonlsd.finamp
