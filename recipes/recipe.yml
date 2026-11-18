@@ -10,6 +10,13 @@ base-image: ghcr.io/joviatrix/jodera-base
 image-version: latest
 
 modules:
+  - type: dnf
+    repos:
+      nonfree: negativo17
+    install:
+      allow-erasing: true
+      packages:
+        - steam
   - from-file: winboat.yml
   - from-file: sunshine.yml
   - from-file: qemu.yml

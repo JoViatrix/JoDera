@@ -9,6 +9,7 @@ configurations:
       - com.orcaslicer.OrcaSlicer
       - com.transmissionbt.Transmission
       - com.unicornsonlsd.finamp
+      - com.valvesoftware.Steam
       - com.vscodium.codium
       - im.riot.Riot
       - info.cemu.Cemu

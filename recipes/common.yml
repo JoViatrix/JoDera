@@ -26,7 +26,6 @@ modules:
         - pipewire-alsa.i686
         - power-profiles-daemon
         - ripgrep
-        - steam
         - tailscale
         - vkBasalt
     remove:
