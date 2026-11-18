@@ -1,0 +1,2 @@
+[Context]
+filesystems=xdg-run/wivrn:ro;xdg-data/flatpak/app/io.github.wivrn.wivrn:ro;/var/lib/flatpak/app/io.github.wivrn.wivrn:ro;xdg-config/openxr:ro;xdg-config/openvr:ro;
