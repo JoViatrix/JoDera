@@ -24,6 +24,10 @@ modules:
         - ripgrep
         - tailscale
         - vkBasalt
+      exclude:
+        - obs-studio
+        - obs-studio-libs
+        - obs-studio-plugin-vkcapture
     remove:
       packages:
         - firefox
