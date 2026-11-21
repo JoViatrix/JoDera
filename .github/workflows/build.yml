@@ -27,7 +27,6 @@ jobs:
       matrix:
         recipe:
           - recipe-base.yml
-          - recipe-base-beta.yml
           - recipe-base-nvidia-legacy.yml
           - recipe-base-nvidia-open.yml
           - recipe-lite.yml
@@ -58,7 +57,6 @@ jobs:
         recipe:
           - recipe.yml
           - recipe-nvidia.yml
-          - recipe-prerelease.yml
     steps:
       - name: Build Custom Images
         uses: blue-build/github-action@v1.12
